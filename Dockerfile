@@ -6,7 +6,7 @@ LABEL maintainer="public@abreto.email"
 RUN apk add --no-cache \
         git \
         py-pip python-dev libffi-dev openssl-dev gcc libc-dev make \
-        curl &&
+        curl ;\
     pip install docker-compose
 
 RUN echo -e \
