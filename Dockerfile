@@ -1,7 +1,7 @@
 # Docker for CI/CD
 FROM docker:19.03
 
-LABEL maintainer="m@abreto.net"
+LABEL maintainer="public@abreto.email"
 
 RUN apk add --no-cache \
         git \
