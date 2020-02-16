@@ -5,9 +5,9 @@ LABEL maintainer="m@abreto.net"
 
 RUN apk add --no-cache \
         git \
-        openssh-client \
-        make \
-        curl
+        py-pip python-dev libffi-dev openssl-dev gcc libc-dev make \
+        curl &&
+    pip install docker-compose
 
 RUN echo -e \
     '#!/bin/sh\nsed -i s/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g /etc/apk/repositories' \
