@@ -1,5 +1,5 @@
 # Docker for CI/CD
-FROM docker:19.03.8
+FROM docker:19.03.12
 
 LABEL maintainer="public@abreto.email"
 
